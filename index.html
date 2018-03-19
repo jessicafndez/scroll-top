@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            .scrollToTop{
+                width:30px; 
+                height:30px;
+                padding:10px; 
+                text-align:center; 
+                background: whiteSmoke;
+                font-weight: bold;
+                color: #444;
+                text-decoration: none;
+                position:fixed;
+                bottom:60px;
+                right:50px;
+                display:none;
+                background: url('top-arrow.svg') no-repeat 0px 20px;
+                border: 1px solid black;
+                background-color: #c0c0c0;
+                background-position: center;
+            }
+            .scrollToTop:hover{
+                text-decoration:none;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                //Check to see if the window is top if not then display button
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 100) {
+                        $('.scrollToTop').fadeIn();
+                    } else {
+                        $('.scrollToTop').fadeOut();
+                    }
+                });
+                
+                //Click event to scroll to top
+                $('.scrollToTop').click(function(){
+                    $('html, body').animate({scrollTop : 0},800);
+                    return false;
+                });
+                
+            });
+        </script>
+    </head>
+    <body>
+        <div class="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit sem tellus, eu ultrices dui euismod in. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Vivamus rutrum arcu ut enim tempor mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br/><br/><br/>
+                Donec mi lacus, efficitur sed interdum ut, consectetur non sapien. Donec eu purus lacinia neque aliquet condimentum vitae id libero. Vestibulum et vestibulum diam. 
+                Aenean ut pulvinar eros. Ut ac malesuada nunc, id aliquet arcu. Aenean ultrices luctus nibh, iaculis commodo tellus commodo a. Integer consequat varius sem. 
+                Vestibulum pretium quam laoreet eros semper elementum. Phasellus volutpat, risus quis tincidunt ullamcorper, nisl libero facilisis nulla, fermentum egestas lorem elit ut risus.<br/><br><br/>
+                Nulla ante lacus, pulvinar vitae dapibus in, volutpat et purus. Etiam nec nunc quis velit malesuada fringilla id at felis. Nunc a orci neque. Etiam lobortis auctor aliquam.<br/>
+                 Donec a lorem dolor. Quisque purus nunc, facilisis a leo quis, imperdiet ornare dolor. Proin malesuada purus at est tincidunt, nec tristique nisi accumsan. <br/>
+                 In mattis venenatis augue, nec semper ligula vestibulum a. Suspendisse congue lectus id nisl consequat, a semper felis suscipit. Cras eget augue eu tortor molestie porttitor.<br/>
+                  Duis risus eros, interdum sit amet velit ac, vestibulum auctor lorem. Duis facilisis pharetra neque. Curabitur vel arcu ut felis fermentum feugiat. Duis maximus est in mi luctus blandit.<br/><br/><br/>
+                
+                Vivamus id tincidunt velit, et lacinia neque. Quisque arcu ex, porta rhoncus libero scelerisque, fringilla tempus ipsum. Nullam vulputate euismod mi, scelerisque commodo nisi finibus suscipit.<br/> 
+                Quisque ultricies, massa ac finibus feugiat, dui tellus efficitur enim, vitae hendrerit purus justo eget erat. Cras sagittis mi non pharetra malesuada.<br/>
+                 Etiam ultricies sem velit, id dapibus arcu sodales ac. Duis et euismod nisl, suscipit malesuada mauris. Vivamus eu viverra leo. Nam ac vehicula tellus.<br/> 
+                 Integer sagittis scelerisque lacus, quis imperdiet neque lacinia eu. Integer nisl mi, ultrices id ornare at, gravida non mauris. 
+                 Proin efficitur, purus sed elementum vulputate, nisl velit interdum urna, et viverra massa tellus a metus.<br/><br/><br/>
+                
+                In condimentum magna in nisi blandit tristique. Donec eu enim vel mauris facilisis congue. <br/>Nam lobortis sed tortor id accumsan. <br/>
+                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <br/>Nam leo ante, pretium tincidunt turpis sit amet, rhoncus scelerisque purus. <br/>
+                Nunc ante ligula, auctor vitae est quis, fermentum pharetra ipsum. Nam at justo sed nulla rutrum facilisis in ut purus. Fusce eleifend magna porta maximus ullamcorper. <br/>
+                Maecenas in aliquam tortor. Duis faucibus semper eleifend. Donec cursus feugiat porta. Donec blandit, lectus at condimentum auctor, magna justo maximus magna, at posuere nisi sapien et urna.<br/>
+                 In hac habitasse platea dictumst.<br/><br/><br/>
+                
+                Fusce feugiat rutrum metus nec tempus. Nulla eget neque ac risus luctus pellentesque. Donec nisl leo, mattis eu dapibus at, tincidunt non dolor.<br/>
+                 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ac ante vel odio pellentesque scelerisque.<br/>
+                  Nunc et tellus quis est dapibus ultrices sit amet eget felis. Phasellus dignissim placerat rhoncus. Nullam eu dolor tincidunt risus ultricies condimentum eu ut risus. <br/>
+                  Suspendisse ac lacus ut lectus posuere auctor quis nec arcu. Sed vitae sem vel nibh rhoncus lacinia nec sit amet mi.<br/><br/><br/>
+                
+                Praesent mattis consequat ultricies. Proin ullamcorper commodo iaculis. Aenean id auctor libero. Nunc feugiat cursus enim. Donec eget quam elit.<br/>
+                 Duis posuere suscipit nisl, venenatis egestas justo accumsan luctus. Morbi sapien quam, suscipit sit amet odio sit amet, dictum euismod tellus. <br/>
+                 Nunc elementum tellus sit amet commodo sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique sem sit amet laoreet vulputate. Donec tempus in turpis at condimentum.<br/><br/><br/>
+                
+                Aliquam pharetra ultrices eros, ac commodo purus tincidunt non. Phasellus posuere urna massa, ut tristique urna vehicula sit amet. <br/>
+                Duis tincidunt, lacus vel sagittis hendrerit, ante est ullamcorper sem, sit amet porttitor massa mauris ac eros. <br/>Pellentesque ex risus, ornare ac sodales nec, bibendum eu est.<br/> 
+                Morbi maximus et justo ut ultrices. Aenean iaculis euismod pharetra. In hac habitasse platea dictumst. <br/>
+                Nunc non ullamcorper est, id venenatis ex. Mauris ornare elit sit amet dolor finibus pharetra. Sed id orci ultrices, ultrices mi non, pulvinar eros.<br/>
+                 Nullam a nisl a ante dapibus consectetur nec nec erat. Maecenas at metus laoreet, molestie erat a, euismod nunc. Nunc aliquet quis ex eget faucibus.<br/>
+                  Phasellus pharetra dolor ac lorem dapibus, non placerat nulla ultrices.<br/><br/><br/>
+                
+                Maecenas ultricies auctor porta. Suspendisse potenti. Curabitur lobortis ullamcorper vulputate. <br/>
+                Morbi ante est, molestie nec hendrerit cursus, sagittis id lectus. Suspendisse convallis eu arcu a elementum. <br/>
+                Cras nec ex tempus, consequat enim in, lacinia purus. Vestibulum elementum congue metus non porttitor. <br/>
+                Suspendisse vitae massa eros. Sed sagittis metus at ligula eleifend rutrum. Pellentesque volutpat dignissim nunc molestie vehicula. <br/>
+                Donec sollicitudin, neque sed sagittis semper, libero tortor varius mi, nec congue ex erat in erat. <br/>
+                Nunc dignissim sit amet neque in porta. Donec at sagittis nibh, tincidunt finibus arcu. Nam faucibus at ante at auctor.<br/><br/><br/>
+                
+                Donec eu mi lorem. Morbi mattis venenatis commodo. Nulla bibendum ipsum cursus, condimentum mi sed, ornare ex. <br/>
+                Phasellus leo nibh, posuere non condimentum vel, ullamcorper quis augue. <br/>
+                Phasellus eget purus pharetra, euismod diam ac, vehicula velit. Phasellus gravida felis neque, sit amet vehicula purus fermentum eget. <br/>
+                Curabitur lectus velit, placerat non tincidunt ac, dictum vitae odio. Quisque tristique blandit felis at consequat. <br/>
+                Suspendisse posuere arcu lorem, eu varius lacus hendrerit eget. Suspendisse porttitor, nibh vel suscipit eleifend, lacus orci varius ex, non congue arcu eros vitae arcu. <br/>
+                Vivamus euismod dolor nec sem facilisis, sit amet auctor purus mattis. Vivamus id vestibulum erat.<br/><br/><br/>
+                
+                Morbi sed orci non ante pulvinar fringilla vitae congue urna. Morbi tempus eget mauris ut vestibulum.<br/>
+                 Morbi ut cursus urna, sed convallis ipsum. Phasellus vitae felis quam. Duis mollis blandit congue. <br/>
+                 Nulla eros nulla, faucibus in accumsan sed, suscipit in ex. Etiam ac ornare erat. <br/>
+                 Vivamus sodales dictum sapien sit amet congue. Fusce consequat felis vulputate, pretium mi eget, gravida ante. <br/>
+                 Curabitur quis viverra diam, lobortis hendrerit quam. Aliquam faucibus elit quis luctus vulputate. <br/>
+                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla quis nisi vel lacus vehicula tincidunt id sed enim. In hac habitasse platea dictumst.<br/><br/><br/>
+        </div>
+
+        <a href="#" class="scrollToTop"></a>
+    </body>
+</html>
